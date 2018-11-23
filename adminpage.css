@@ -1,0 +1,37 @@
+
+table {
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin:0 auto;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+    max-width:100%;
+    white-space:nowrap;
+}
+th{
+    background-color: #0984e3;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+tr:hover {background-color: #ddd;}
+body{
+    background-color: #4FC3F7;
+}
+.button {
+    background-color: #0984e3; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.x{
+
+
+}
