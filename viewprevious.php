@@ -28,31 +28,7 @@
         echo "No Bookings Found!!!!!!";
       }
   
-             /* $ticket_num = array();
-              $ticket_id = array();
-              echo '<table>';
-              
-              echo '</table>';
-              $_SESSION["ticket_num_array"] = $ticket_num;
-              $_SESSION["selected_ticket_count"] = 
-
-              echo '<button type = "submit" id="deletebtn">Delete</button>';
-          echo '</form>';
-
-          if(isset($_POST['deletebtn'])){
-              $count = 1;
-              while($count != $k){
-                  $id = 'Booking' . $count ;
-                  if(isset($id)){
-                    $tick_num = $ticket_num[$count - 1];
-                    $sql_delete = "DELETE FROM user_booking WHERE t_num = '$tick_num';";
-                    mysqli_query($conn, $sql_delete);
-                  }
-                  $count = $count + 1;
-                }
-            }
-          echo "Want to see previous Boookings????";
-        }*/
+             
  ?>
               
         
