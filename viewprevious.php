@@ -1,3 +1,22 @@
+<head>
+    <link rel="stylesheet" href="css/bookingpage.css">
+</head>
+<center><h1>Previous Bookings/Cancellations</h1></center>
+
+<div style="overflow-x:auto;">
+  <table action="includes/login-inc.php" method="POST">
+    <tr>
+      <th>Cancel Ticket</th>
+      <th>Ticket_number</th>
+      <th>Passenger Name</th>
+      <th>Passenger Age</th>
+      <th>User Name</th>
+      <th>Train Name</th>
+      <th>Train No</th>
+      <th>Date Of Journey</th>
+      <th>Status</th>
+    </tr>
+
 <?php 
   include_once 'includes/dbh-inc.php';
   session_start();
@@ -19,7 +38,7 @@
                     echo '<td>' . $row_prevbookings['train_name'] . '</td>';
                     echo '<td>' . $row_prevbookings['train_no'] . '</td>';
                     echo '<td>' . $row_prevbookings['date'] . '</td>';
-                    echo '<td>' . $row_prevbookings['train_status'] . '</td>';
+                    echo '<td>' . $row_prevbookings['status'] . '</td>';
                   echo '</tr>';
                   echo "<br>";
                 }
@@ -27,9 +46,8 @@
       else{
         echo "No Bookings Found!!!!!!";
       }
-  
-             
  ?>
               
-        
+</table>
+</div>        
               
