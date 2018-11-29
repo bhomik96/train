@@ -34,7 +34,8 @@
 	{
 		$passenger_name = mysqli_real_escape_string($conn, $_POST['passenger' . $count]);
 		$passenger_age = mysqli_real_escape_string($conn, $_POST['passenger_age' . $count]);
-		$insert_booking = "INSERT INTO user_booking (passenger_name, passenger_Age, user_name, train_name, train_no, date, train_status, day) VALUES ('$passenger_name', '$passenger_age', '$username', '$train_name', '$train_no', '$date_of_journey', '$train_status','$day');";
+		$berth_no = "S" . $count;
+		$insert_booking = "INSERT INTO user_booking (passenger_name, passenger_Age, berth_no, user_name, train_name, train_no, date, train_status, day) VALUES ('$passenger_name', '$passenger_age', '$berth_no', '$username', '$train_name', '$train_no', '$date_of_journey', '$train_status','$day');";
 		mysqli_query($conn, $insert_booking);
 		$decrease_amt = "UPDATE user_details SET amount=amount-500 WHERE user_name='$username';";
 		mysqli_query($conn, $decrease_amt);
